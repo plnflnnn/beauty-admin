@@ -1,0 +1,28 @@
+.calendar {
+	width: 280px;
+	height: 272px;
+	background-color: #fff;
+	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
+	.react-calendar__tile--active {
+		background: #EBBBAB;
+		&:enabled:hover {
+			background: #EBBBAB;
+		}
+		&:enabled:focus {
+			background: #EBBBAB;
+		}
+	}
+}
+.deselect-date {
+	padding: 5px 20px;
+	color: #000000;
+	border: 1px solid #a0a096;
+	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
+	background: #ffffff;
+	margin: 2px auto 0;
+	display: block;
+	cursor: pointer;
+	&:active {
+		box-shadow: rgba(50, 50, 93, 0.25) 0px 15px 300px -6px inset, rgba(0, 0, 0, 0.3) 0px 9px 18px -9px inset;
+	}
+}

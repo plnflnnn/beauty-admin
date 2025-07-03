@@ -60,7 +60,7 @@ const AppointmentItem = memo(
 					<span className="appointment__service">Service: {service}</span>
 					<span className="appointment__phone">Phone: {phone}</span>
 				</div>
-				{!canceled ? (
+				{!canceled && dayjs(date).diff(undefined, "m") > 0 ? (
 					<>
 						<div className="appointment__time">
 							<span>Time left:</span>

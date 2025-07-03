@@ -15,7 +15,7 @@ const requiredFields = ["id", "date", "name", "service", "phone", "canceled"];
 const useAppointmentService = () => {
 	const { loadingStatus, request } = useHttp();
 
-	const _apiBase = "http://localhost:3001/appointments";
+	const _apiBase = "https://beauty-backend-cfq6.onrender.com/appointments";
 
 	const getAllAppointments = async (): Promise<IAppointment[]> => {
 		const res = await request({ url: _apiBase });

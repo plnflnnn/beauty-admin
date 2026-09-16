@@ -27,9 +27,9 @@ function HistoryList() {
 
 	return (
 		<>
-			{allAppointments.map((item) => {
+			{allAppointments.length ? allAppointments.map((item) => {
 				return <AppointmentItem {...item} key={item.id} />;
-			})}
+			}) : <p className="no-appointments">There are no appointments on these dates.</p>}
 		</>
 	);
 }
